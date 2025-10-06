@@ -1,0 +1,56 @@
+body {
+    background-color: #806181;
+}
+
+/* List component */
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .list .list-item {
+        display: flex;
+        /* Estilo adicional para mejorar la visualización de los ítems */
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #914545;
+        border-radius: 8px;
+    }
+
+        /* Contenedor de la imagen y el video */
+        .list .list-item__image,
+        .list .list-item__video {
+            flex-shrink: 0;
+            width: 200px;
+            margin-right: 15px;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+
+        /* Estilo para las imágenes y videos dentro de su contenedor */
+        .list .list-item__image img,
+        .list .list-item__video video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+
+        /*list item content*/
+        .list .list-item__content {
+            flex-grow: 1;
+            padding: 0 10px; /*Espacio interno para el contenido*/
+        }
+        
+        .list .list-item__content h3 {
+            margin-top: 0;
+        }
+
+        /* Titulo centrado*/
+        .list-item h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    }
